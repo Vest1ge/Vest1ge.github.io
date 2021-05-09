@@ -25,9 +25,7 @@ padding: 5px;
 
 ## Current Interest
  * Bigdata
- * Android Applicaiton 
- * Web Developmetn
- * Internet of Things
+ * Android Applicaiton
 
 ## Contact
  * Email : duddnjs7909@gmail.com
