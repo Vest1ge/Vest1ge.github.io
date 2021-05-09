@@ -108,7 +108,7 @@ analytics:
 # Site Author
 author:
   name             : "Vest1ge"
-  avatar           : "/assets/img/me.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/img/me.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "**So Amazing**"
   location         : "South Korea"
   email            : #
