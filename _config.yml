@@ -110,8 +110,7 @@ author:
   name             : "Vest1ge"
   avatar           : "/assets/img/me.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "**I'm Jaeyoung Oh**"
-  location         : "Hankyong National Univ"
-  location         : "South Korea"
+  location         : "Hankyong National Univ, South Korea"
   email            : #
   links:
     - label: "Email"
