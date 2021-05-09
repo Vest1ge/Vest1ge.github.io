@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "custom" # "air", "aqua", "contrast", "dark", "dirt",
 locale                   : "en-US"
 title                    : "Vest1ge's BLog"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "2017250024"
 name                     : "Vest1ge"
 description              : "Jae-young Oh"
 url                      : "https://Vest1ge.github.io" # the base hostname & protocol for your site e.g. 
@@ -111,7 +111,7 @@ author:
   avatar           : "/assets/img/me.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "**So Amazing**"
   location         : "South Korea"
-  email            : "duddnjs7909@gmail.com"
+  email            : #
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
