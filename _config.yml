@@ -302,3 +302,10 @@ defaults:
       layout: single
       classes: wide
       author_profile: true
+
+# Math equation
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
