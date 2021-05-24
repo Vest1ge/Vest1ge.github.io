@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "custom" # "air", "aqua", "contrast", "dark", "dirt",
 locale                   : "en-US"
 title                    : "Vest1ge's Blog"
 title_separator          : "-"
-subtitle                 : "2017250024"
+subtitle                 : # ""
 name                     : "Vest1ge"
 description              : "Jae-young Oh"
 url                      : "https://Vest1ge.github.io" # the base hostname & protocol for your site e.g. 
