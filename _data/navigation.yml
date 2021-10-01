@@ -5,7 +5,7 @@ main:
   - title: "About"
     url: /about/
   - title: "텐서 소개"
-    url: /Tensorguide/
+    url: /tensorsogae/
   - title : "Categories"
     url : /categories/
   # - title: "About"
