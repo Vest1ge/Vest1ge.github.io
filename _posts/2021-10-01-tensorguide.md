@@ -165,7 +165,7 @@ rank_3_tensor
 <table>
 <tr>
   <th colspan=3>3축 텐서, shape: <code>[3, 2, 5]</code></th>
-<tr>
+</tr>
 <tr>
   <td>
    <img src="https://github.com/Vest1ge/Tensor/blob/main/img/3-axis_numpy.png?raw=1"/>
