@@ -1,3 +1,19 @@
+---
+title: '[Tensor] 텐서 소개'
+categories:
+    - Tensor
+
+tag:
+    - Python
+    - Tensor
+    - DL
+
+last_modified_at: 2021-10-01T14:00:00+09:00
+use_math: true
+comments: true
+toc: true
+---
+
 이 포스트는 tensorflow 홈페이지 https://www.tensorflow.org/guide/tensor 내용을 번역하여 정리한 것 입니다. 
 
 참고는 하되, 영문 내용을 통해 이해하는 것이 더욱 좋습니다.
