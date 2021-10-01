@@ -495,7 +495,7 @@ print(rank_3_tensor[:, :, 4])
 <img src="https://github.com/Vest1ge/Tensor/blob/main/img/index1.png?raw=1" alt="마지막 축의 인덱스-4에서 모든 값이 선택된 3x2x5 텐서.">
   </td>
       <td>
-<img src="https://github.com/Vest1ge/Tensor/blob/main/img/tensor/index2.png?raw=1" alt="선택한 값은 2축 텐서에 패키지된다.">
+<img src="https://github.com/Vest1ge/Tensor/blob/main/img/index2.png?raw=1" alt="선택한 값은 2축 텐서에 패키지된다.">
   </td>
 </tr>
 </table>
