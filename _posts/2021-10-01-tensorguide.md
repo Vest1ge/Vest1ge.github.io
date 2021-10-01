@@ -14,7 +14,7 @@ comments: true
 toc: true
 ---
 
-이 포스트는 tensorflow 홈페이지 https://www.tensorflow.org/guide/tensor 내용을 번역하여 정리한 것 입니다. 
+이 포스트는 tensorflow 홈페이지 [https://www.tensorflow.org/guide/tensor](https://www.tensorflow.org/guide/tensor) 내용을 번역하여 정리한 것 입니다. 
 
 참고는 하되, 영문 내용을 통해 이해하는 것이 더욱 좋습니다.
 
@@ -352,8 +352,6 @@ print("총 원소의 수(3*2*4*5): ", tf.size(rank_4_tensor).numpy())
     총 원소의 수(3*2*4*5):  120
 
 
-While axes are often referred to by their indices, you should always keep track of the meaning of each. Often axes are ordered from global to local: The batch axis first, followed by spatial dimensions, and features for each location last. This way feature vectors are contiguous regions of memory.
-
 축은 종종 인덱스로 참조되지만 각 축의 의미를 항상 추적해야 합니다. 축은 대개 전역에서 로컬 순서로 정렬됩니다. 배치 축에 이어 공간 차원 및 각 위치의 특성이 맨 마지막에 옵니다. 이러한 방식으로 특성 벡터(feature vectors)는 메모리의 연속적인 영역입니다.
 
 <table>
@@ -577,11 +575,8 @@ print(tf.reshape(rank_3_tensor, [-1]))
      24 25 26 27 28 29], shape=(30,), dtype=int32)
 
 
-Typically the only reasonable use of `tf.reshape` is to combine or split adjacent axes (or add/remove `1`s).
 
 일반적으로 `tf.reshape`의 합리적인 용도는 인접한 축을 결합하거나 분할하는 것(또는 `1`을 추가/제거하는 것)뿐이다.
-
-For this 3x2x5 tensor, reshaping to (3x2)x5 or 3x(2x5) are both reasonable things to do, as the slices do not mix:
 
 이 3x2x5 텐서의 경우 (3x2)x5 또는 3x(2x5)로 재구성하는 것이 슬라이스가 섞이지 않기 때문에 합리적인 재구성 방법이라고 할 수 있습니다.
 
@@ -622,8 +617,6 @@ print(tf.reshape(rank_3_tensor, [3, -1]))
 </tr>
 </table>
 
-
-Reshaping will "work" for any new shape with the same total number of elements, but it will not do anything useful if you do not respect the order of the axes.
 
 전체 원소 수가 동일한 새 형상에 대해 재구성되지만 축의 순서를 고려하지 않으면 유용하게 사용할 수 없습니다.
 
@@ -737,11 +730,7 @@ print(x * z)
     tf.Tensor([2 4 6], shape=(3,), dtype=int32)
 
 
-Likewise, axes with length 1 can be stretched out to match the other arguments.  Both arguments can be stretched in the same computation.
-
 마찬가지로 크기가 1인 축도 다른 인수와 일치하도록 확장할 수 있습니다. 두 인수 모두 동일한 계산으로 확장할 수 있습니다.
-
-In this case a 3x1 matrix is element-wise multiplied by a 1x4 matrix to produce a 3x4 matrix. Note how the leading 1 is optional: The shape of y is `[4]`.
 
 이 경우, 3x1 행렬에 1x4 행렬을 원소별 곱셈하면 3x4 행렬이 생성됩니다. 선행 1이 선택 사항인 점에 유의하세요. y의 형상은 `[4]`입니다.
 
@@ -817,8 +806,6 @@ print(tf.broadcast_to(tf.constant([1, 2, 3]), [3, 3]))
      [1 2 3]
      [1 2 3]], shape=(3, 3), dtype=int32)
 
-
-Unlike a mathematical op, for example, `broadcast_to` does nothing special to save memory.  Here, you are materializing the tensor.
 
 예를 들어, 수학적 연산과 달리 `broadcast_to`는 메모리를 절약하기 위해 특별한 연산을 수행하지 않습니다. 여기에서 텐서를 구체화해봅시다.
 
