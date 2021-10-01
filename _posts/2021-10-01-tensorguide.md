@@ -325,11 +325,12 @@ rank_4_tensor = tf.zeros([3, 2, 4, 5])
 </tr>
 <tr>
   <td>
-<img src="https://github.com/Vest1ge/Tensor/blob/main/img/shape.png?raw=1" alt="A tensor shape is like a vector.">
-    <td>
-<img src="https://github.com/Vest1ge/Tensor/blob/main/img/4-axis_block.png?raw=1" alt="A 4-axis tensor">
+   <img src="https://github.com/Vest1ge/Tensor/blob/main/img/shape.png?raw=1" alt="A tensor shape is like a vector.">
   </td>
-  </tr>
+  <td>
+   <img src="https://github.com/Vest1ge/Tensor/blob/main/img/4-axis_block.png?raw=1" alt="A 4-axis tensor">
+  </td>
+</tr>
 </table>
 
 
@@ -360,8 +361,8 @@ While axes are often referred to by their indices, you should always keep track 
 <th>일반적인 축 순서</th>
 </tr>
 <tr>
-    <td>
-<img src="https://github.com/Vest1ge/Tensor/blob/main/img/shape2.png?raw=1" alt="각 축이 무엇인지 추적합니다. 4축 텐서는 배치, 너비, 높이, 특징일 수 있습니다.">
+  <td>
+   <img src="https://github.com/Vest1ge/Tensor/blob/main/img/shape2.png?raw=1" alt="각 축이 무엇인지 추적합니다. 4축 텐서는 배치, 너비, 높이, 특징일 수 있습니다.">
   </td>
 </tr>
 </table>
@@ -491,11 +492,11 @@ print(rank_3_tensor[:, :, 4])
 <th colspan=2>배치에서 각 예의 모든 위치에서 마지막 특성 선택하기 </th>
 </tr>
 <tr>
-    <td>
-<img src="https://github.com/Vest1ge/Tensor/blob/main/img/index1.png?raw=1" alt="마지막 축의 인덱스-4에서 모든 값이 선택된 3x2x5 텐서.">
+  <td>
+   <img src="https://github.com/Vest1ge/Tensor/blob/main/img/index1.png?raw=1" alt="마지막 축의 인덱스-4에서 모든 값이 선택된 3x2x5 텐서.">
   </td>
-      <td>
-<img src="https://github.com/Vest1ge/Tensor/blob/main/img/index2.png?raw=1" alt="선택한 값은 2축 텐서에 패키지된다.">
+  <td>
+   <img src="https://github.com/Vest1ge/Tensor/blob/main/img/index2.png?raw=1" alt="선택한 값은 2축 텐서에 패키지된다.">
   </td>
 </tr>
 </table>
@@ -605,18 +606,18 @@ print(tf.reshape(rank_3_tensor, [3, -1]))
 
 
 <table>
-<th colspan=3>
-몇 가지 좋은 재구성
-</th>
+<tr>
+<th colspan=3> 몇 가지 좋은 재구성 </th>
+</tr>
 <tr>
   <td>
-<img src="https://github.com/Vest1ge/Tensor/blob/main/img/reshape-before.png?raw=1" alt="3x2x5 텐서">
+   <img src="https://github.com/Vest1ge/Tensor/blob/main/img/reshape-before.png?raw=1" alt="3x2x5 텐서">
   </td>
   <td>
-  <img src="https://github.com/Vest1ge/Tensor/blob/main/img/reshape-good1.png?raw=1" alt="(3x2)x5로 재구성된 동일한 데이터">
+   <img src="https://github.com/Vest1ge/Tensor/blob/main/img/reshape-good1.png?raw=1" alt="(3x2)x5로 재구성된 동일한 데이터">
   </td>
   <td>
-  <img src="https://github.com/Vest1ge/Tensor/blob/main/img/reshape-good2.png?raw=1" alt="3x(2x5)로 재구성된 동일한 데이터">
+   <img src="https://github.com/Vest1ge/Tensor/blob/main/img/reshape-good2.png?raw=1" alt="3x(2x5)로 재구성된 동일한 데이터">
   </td>
 </tr>
 </table>
@@ -666,18 +667,17 @@ except Exception as e:
 
 
 <table>
-<th colspan=3>
-몇가지 좋지 않은 재구성
-</th>
+<tr> <th colspan=3> 몇가지 좋지 않은 재구성 </th>
+</tr>
 <tr>
   <td>
-<img src="https://github.com/Vest1ge/Tensor/blob/main/img/reshape-bad.png?raw=1" alt="축의 순서를 변경할 수 없습니다. tf.transpose를 사용하십시오.">
+   <img src="https://github.com/Vest1ge/Tensor/blob/main/img/reshape-bad.png?raw=1" alt="축의 순서를 변경할 수 없습니다. tf.transpose를 사용하십시오.">
   </td>
   <td>
-<img src="https://github.com/Vest1ge/Tensor/blob/main/img/reshape-bad4.png?raw=1" alt="Anything that mixes the slices of data together is probably wrong.">
+   <img src="https://github.com/Vest1ge/Tensor/blob/main/img/reshape-bad4.png?raw=1" alt="Anything that mixes the slices of data together is probably wrong.">
   </td>
   <td>
-<img src="https://github.com/Vest1ge/Tensor/blob/main/img/reshape-bad2.png?raw=1" alt="새 형상이 정확하게 맞아야 합니다.">
+   <img src="https://github.com/Vest1ge/Tensor/blob/main/img/reshape-bad2.png?raw=1" alt="새 형상이 정확하게 맞아야 합니다.">
   </td>
 </tr>
 </table>
@@ -776,7 +776,7 @@ print(tf.multiply(x, y))
 </tr>
 <tr>
   <td>
-<img src="https://github.com/Vest1ge/Tensor/blob/main/img/broadcasting.png?raw=1" alt="4x1 행렬에 3x1 행렬을 추가하면 3x4 행렬이 생성됩니다.">
+   <img src="https://github.com/Vest1ge/Tensor/blob/main/img/broadcasting.png?raw=1" alt="4x1 행렬에 3x1 행렬을 추가하면 3x4 행렬이 생성됩니다.">
   </td>
 </tr>
 </table>
@@ -845,7 +845,7 @@ Unlike a mathematical op, for example, `broadcast_to` does nothing special to sa
 </tr>
 <tr>
   <td>
-<img src="https://github.com/Vest1ge/Tensor/blob/main/img/ragged.png?raw=1" alt="2축 비정형 텐서는 각 행의 길이가 다를 수 있습니다.">
+   <img src="https://github.com/Vest1ge/Tensor/blob/main/img/ragged.png?raw=1" alt="2축 비정형 텐서는 각 행의 길이가 다를 수 있습니다.">
   </td>
 </tr>
 </table>
@@ -917,7 +917,7 @@ print(scalar_string_tensor)
 </tr>
 <tr>
   <td>
-<img src="https://github.com/Vest1ge/Tensor/blob/main/img/strings.png?raw=1" alt="문자열의 길이는 텐서의 축 중 하나가 아니다.">
+   <img src="https://github.com/Vest1ge/Tensor/blob/main/img/strings.png?raw=1" alt="문자열의 길이는 텐서의 축 중 하나가 아니다.">
   </td>
 </tr>
 </table>
